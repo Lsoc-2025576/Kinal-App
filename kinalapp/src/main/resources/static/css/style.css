@@ -1,0 +1,80 @@
+:root {
+    --primary: #4f46e5;
+    --sidebar-bg: #1e293b;
+    --main-bg: #f8fafc;
+    --text-dark: #1e293b;
+    --text-light: #94a3b8;
+    --white: #ffffff;
+    --border: #e2e8f0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+.main-wrapper { display: flex; min-height: 100vh; }
+
+/* SIDEBAR ROL: NAVEGACIÓN PRINCIPAL */
+.sidebar {
+    width: 260px;
+    background: var(--sidebar-bg);
+    color: var(--white);
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar-header h3 { color: var(--primary); margin-bottom: 30px; font-size: 1.5rem; }
+.sidebar-header span { color: white; }
+
+.nav-links { list-style: none; }
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* ÁREA DE CONTENIDO ROL: TRABAJO */
+.content-area {
+    margin-left: 260px;
+    flex: 1;
+    background: var(--main-bg);
+    padding: 40px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card, .table-container {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* TABLA ROL: DATOS */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { text-align: left; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); }
+td { padding: 15px; border-bottom: 1px solid var(--border); }
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
