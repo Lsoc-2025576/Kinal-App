@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinalApp | Gestión Integral</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="logo">Kinal<span>App</span></div>
+        <nav>
+            <a href="#clientes" class="nav-link"><i class="fas fa-user"></i> Clientes</a>
+            <a href="#productos" class="nav-link"><i class="fas fa-box"></i> Productos</a>
+            <a href="#usuarios" class="nav-link"><i class="fas fa-users-cog"></i> Usuarios</a>
+            <a href="#ventas" class="nav-link"><i class="fas fa-shopping-cart"></i> Ventas</a>
+            <a href="#detalles" class="nav-link"><i class="fas fa-list"></i> Detalles</a>
+        </nav>
+    </aside>
+
+    <main class="workspace">
+
+        <section id="clientes" class="entity-section">
+            <div class="section-header">
+                <h2><i class="fas fa-user"></i> Gestión de Clientes</h2>
+            </div>
+
+            <div class="card form-card">
+                <form id="form-clientes">
+                    <div class="form-grid">
+                        <input type="text" placeholder="DPI Cliente" required>
+                        <input type="text" placeholder="Nombres" required>
+                        <input type="text" placeholder="Apellidos" required>
+                        <input type="text" placeholder="Dirección" required>
+                        <button type="submit" class="btn btn-add">Guardar Cliente</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card table-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>DPI</th>
+                        <th>Nombre Completo</th>
+                        <th>Dirección</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody id="lista-clientes">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="productos" class="entity-section">
+            <div class="section-header">
+                <h2><i class="fas fa-box"></i> Inventario de Productos</h2>
+            </div>
+            <div class="card form-card">
+                <form id="form-productos">
+                    <div class="form-grid">
+                        <input type="text" placeholder="Nombre Producto">
+                        <input type="number" step="0.01" placeholder="Precio">
+                        <input type="number" placeholder="Stock">
+                        <button type="submit" class="btn btn-add">Registrar Producto</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>

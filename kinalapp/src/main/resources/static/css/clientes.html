@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>KinalApp | Gestión de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h3>Kinal<span>App</span></h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="clientes.html" class="active"><i class="fas fa-user-tie"></i> Clientes</a></li>
+            <li><a href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+            <li><a href="usuarios.html"><i class="fas fa-users-cog"></i> Usuarios</a></li>
+            <li><a href="ventas.html"><i class="fas fa-shopping-cart"></i> Ventas</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-area">
+        <header class="content-header">
+            <h1>Administración de Clientes</h1>
+            <button class="btn-primary" onclick="abrirModal()"><i class="fas fa-plus"></i> Nuevo Cliente</button>
+        </header>
+
+        <section class="table-container">
+            <div class="table-tools">
+                <input type="text" id="searchClient" placeholder="Buscar por DPI o Nombre...">
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>DPI</th>
+                    <th>Nombre Completo</th>
+                    <th>Dirección</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody id="tbody-clientes">
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+</body>
+</html>
